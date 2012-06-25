@@ -1,0 +1,16 @@
+{
+    "name": "datetime",
+    "author": "Matthew Sackman",
+    "version": "0.1.0",
+    "private": true,
+    "main": "index",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/511/datetime.git"
+    },
+    "description": "Timezone aware modules for date, time, recurring events and timeline",
+    "dependencies": {},
+    "keywords": ["date", "time", "datetime", "timezone", "locale", "timeline",
+                 "discrete event simulation", "localization"
+                ]
+}
