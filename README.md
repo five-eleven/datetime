@@ -89,16 +89,16 @@ documented. `timeline` is not so much, but the API is dead simple.
 - `date.setDate(N)` does take into account DST changes (London "sprung
   forwards" at 1am on Sunday 25th March 2012) (performed on nodejs):
 
-      var date = new Date(1332637100000);
-      date;                                         // Sun, 25 Mar 2012 00:58:20 GMT
-      date.getTimezoneOffset();                     // 0
-      var date2 = new Date(1332637100000);
-      date2.setDate(26);
-      date2;                                        // Sun, 25 Mar 2012 23:58:20 GMT
-      date2.getTimezoneOffset();                    // -60
-      (date2.getTime() - date.getTime()) / 3600000  // 23 hours, not 24!
-      date.toLocaleString();                        // 'Sun Mar 25 2012 00:58:20 GMT+0000 (GMT)'
-      date2.toLocaleString();                       // 'Mon Mar 26 2012 00:58:20 GMT+0100 (BST)'
+        var date = new Date(1332637100000);
+        date;                                         // Sun, 25 Mar 2012 00:58:20 GMT
+        date.getTimezoneOffset();                     // 0
+        var date2 = new Date(1332637100000);
+        date2.setDate(26);
+        date2;                                        // Sun, 25 Mar 2012 23:58:20 GMT
+        date2.getTimezoneOffset();                    // -60
+        (date2.getTime() - date.getTime()) / 3600000  // 23 hours, not 24!
+        date.toLocaleString();                        // 'Sun Mar 25 2012 00:58:20 GMT+0000 (GMT)'
+        date2.toLocaleString();                       // 'Mon Mar 26 2012 00:58:20 GMT+0100 (BST)'
 
   It has clearly understood that Sunday 25th March 2012 in London was
   only 23 hours long
