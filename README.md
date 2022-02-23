@@ -1,3 +1,5 @@
+# datetime is no longer actively maintained by VMware, Inc.
+
 # DateTime
 
 This library exports four modules:
